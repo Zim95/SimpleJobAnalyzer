@@ -7,7 +7,9 @@ authors = [
     { name = "Zim95", email = "shresthanamah@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "ijson>=3.6.0",
+]
 
 [project.scripts]
 simplejobanalyzer = "simplejobanalyzer:main"
@@ -15,3 +17,8 @@ simplejobanalyzer = "simplejobanalyzer:main"
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
