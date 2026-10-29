@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated sample data (large; regenerate with scripts/generate_data.py)
+data/

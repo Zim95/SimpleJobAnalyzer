@@ -12,6 +12,7 @@ class DataSource(ABC):
     @abstractmethod
     def read(self) -> Iterator[Any]:
         """Yield raw records one at a time. So that we dont overload memory"""
+        raise NotImplementedError("Read has not been implemented.")
 
 
 class DataSourceError(Exception):

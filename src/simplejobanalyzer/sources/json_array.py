@@ -8,7 +8,7 @@ both work, and only one record is held in memory at a time whatever the file siz
 from typing import Iterator, Any
 
 # third party
-import ijson
+import ijson  # type: ignore[import-untyped]  # ijson ships no type hints
 
 # modules
 from .base import DataSource, DataSourceError
